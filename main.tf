@@ -1,4 +1,4 @@
-resource     "aws_cloudfront_distribution" "this" {
+resource "aws_cloudfront_distribution" "this" {
   origin {
     domain_name = var.bucket_regional_domain_name
     origin_id   = split(".", var.bucket_regional_domain_name)[0]
