@@ -52,6 +52,6 @@ resource "aws_cloudfront_distribution" "this" {
     cloudfront_default_certificate = var.cf_default_cert == false ? false : var.cf_default_cert
     acm_certificate_arn            = var.cf_default_cert == false ? var.acm_cert_arn : ""
     ssl_support_method             = var.cf_default_cert == false ? var.ssl_method : ""
-    minimum_protocol_version       = var.ssl_protocol_version 
+    minimum_protocol_version       = var.ssl_protocol_version
   }
 }

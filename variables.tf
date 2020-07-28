@@ -92,6 +92,6 @@ variable "ssl_protocol_version" {
 }
 
 variable "environment" {
- type = string
- default = "production"
+  type    = string
+  default = "production"
 }
